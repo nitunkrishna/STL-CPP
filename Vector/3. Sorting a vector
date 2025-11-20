@@ -1,0 +1,40 @@
+#include"bits/stdc++.h"
+
+using namespace std;
+
+void printres(vector<int>v);
+
+int main()
+{
+    vector<int>v1={5, 3, 7, 9, 1};
+    vector<int>v2=v1;
+    vector<int>v3=v1;
+    vector<int>v4=v1;
+    
+    // Sorting "NON-DECREASING ORDER" from begining to end
+    sort(v1.begin(), v1.end());
+    printres(v1);
+    
+    // Sorting "NON-DECREASING ORDER" from index-0 to index-3
+    sort(v2.begin(), v2.begin()+3);
+    printres(v2);
+
+    // Sorting "NON-INCREASING ORDER" from begining to end
+    //              Method-1
+    sort(v3.begin(), v3.end(), greater<int>());
+    printres(v3);
+
+    // Sorting "NON-INCREASING ORDER" from begining to end
+    //              Method-2
+    sort(v4.rbegin(), v4.rend());
+    printres(v4);
+
+    return 0;
+}
+
+void printres(vector<int>v)
+{
+    for(int i=0; i<v.size(); i++)
+        cout << v[i] << " ";
+    cout << endl;
+}
