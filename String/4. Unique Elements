@@ -1,0 +1,13 @@
+#include"bits/stdc++.h"
+
+using namespace std;
+
+int main()
+{
+    string str="nitun";
+    sort(str.begin(), str.end());
+    int unique_elements=unique(str.begin(), str.end())-str.begin();
+    for(int i=0; i<unique_elements; i++)
+        cout << str[i];
+    return 0;
+}
