@@ -1,0 +1,26 @@
+#include"bits/stdc++.h"
+
+using namespace std;
+
+int main()
+{
+    vector<int>v={5, 3, 7, 9, 1, 4, 8, 2, 5, 8, 9, 5};
+    
+    // Maximum element of a vector
+    int max=*max_element(v.begin(), v.end());
+    cout << "Maximum element= " << max << endl;
+    
+    // Index of maximum element of a vector
+    int max_index=max_element(v.begin(), v.end()) -v.begin();
+    cout << "Index of maximum element= " << max_index << endl;
+
+    // Minimum element of a vector
+    int min=*min_element(v.begin(), v.end());
+    cout << "Minimum element= " << min << endl;
+
+    // Index of minimum element of a vector
+    int min_index=min_element(v.begin(), v.end()) -v.begin();
+    cout << "Index of minimum element= " << min_index << endl;
+
+    return 0;
+}
