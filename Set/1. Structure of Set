@@ -1,0 +1,13 @@
+#include"bits/stdc++.h"
+
+using namespace std;
+
+int main()
+{
+    set<int>s={5,3,5,2,3,5,1};
+    cout << "Size of Set :" << s.size() << endl;
+    for(auto i:s)
+        cout << i << " ";
+    cout << endl;
+    return 0;
+}
