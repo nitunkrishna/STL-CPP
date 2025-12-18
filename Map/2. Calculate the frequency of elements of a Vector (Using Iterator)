@@ -1,0 +1,14 @@
+#include"bits/stdc++.h"
+
+using namespace std;
+
+int main()
+{
+    vector<int>v={5,3,5,2,3,5,1};
+    map<int,int>freq;
+    for(int i:v)
+        freq[i]++;
+    for(map<int, int> :: iterator it=freq.begin(); it!=freq.end(); it++)
+        cout << it->first << " occurs " << it->second << " times" << endl;
+    return 0;
+}
